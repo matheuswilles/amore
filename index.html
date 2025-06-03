@@ -53,10 +53,13 @@
 </body>
 </html>
 
-<body>
-  <!-- Outros conteúdos do seu site -->
+<button onclick="playMusic()">Clique para ouvir</button>
 
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/c6f_xGXLQTk?autoplay=1&loop=1&playlist=c6f_xGXLQTk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<audio id="musica" src="sua-musica.mp3"></audio>
 
-  <!-- Mais conteúdos -->
-</body>
+<script>
+  function playMusic() {
+    const musica = document.getElementById('musica');
+    musica.play();
+  }
+</script>
